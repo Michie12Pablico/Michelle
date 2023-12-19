@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css ">
+    <script src="https://kit.fontawesome.com/45c9cbd0ce.js" crossorigin="anonymous"></script>
+<head> 
+<body>
+    <div id="header">
+        <video id="video-background" autoplay muted loop>
+            <source src="c:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\y2mate.is - Neon skull light death s head skeleton background video no copyright green screen animation-wDUv63cbcAo-1080pp-1693921293.mp4">
+            <!-- Add more source tags for other video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <nav>
+                <img src="c:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\mich logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Animator/Developer</p>
+                <h1>Whats Up! I'm <span>Michelle</span></h1>
+            </div>
+        </div>
+    </div>
+<!---------------about ME------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="c:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\Micheeee.png" alt="Mich Logo">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi there! My name is Michelle, a current college student and freelancer specialized in creating beautiful artworks.
+                </p>
+                <div id="services">
+                    <div class="container">
+                        <div class="services-list">
+                            <div>
+                                <!---Resume---->
+                                <i class="fa-regular fa-file"></i>
+                                <h2>Check My Resume</h2>
+                                <p>
+                                   Kindly check out my resume for a more information.
+                                </p>
+                                <a href="C:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\myresume\index.html">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------services-------- --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <!--Sample Art Works-->
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>3D Modeling</h2>
+                <p>Check out my works</p>
+                <a href="C:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\3Dmodeling\3d modeling.html">learn more</a>
+            </div>
+            <!--Sample Artworks-->
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Digital Art</h2>
+                <p>Check out my works</p>
+                <a href="C:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\Digital Art\Digital Art.html">learn more</a>
+            </div>
+              <!--Sample Artworks-->
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Traditonal Art</h2>
+                <p>Check out my works</p>
+                <a href="C:\Users\Michelle O. Pablico\Desktop\My portfolio\myPortfolio\Traditional\Traditional Art.html">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="c:\Users\Michelle O. Pablico\Pictures\artworks\myeditphotos\red.png">
+            </div>
+            <div class="work">
+                <img src="c:\Users\Michelle O. Pablico\Pictures\artworks\Untitled146_20220124170839.png">
+            </div>
+            <div class="work">
+                <img src="c:\Users\Michelle O. Pablico\Pictures\my pics\IMG_20220901_083815.jpg">
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--------contact------->
+<div id="Contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>michellepablico45@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>09685989048</p>
+            <div class="socia-icons">
+                <a href="https://www.facebook.com/michelle.facade?mibextid=ZbWKwL/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/artheared/?hl=en#/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/gradzky.linkinn?mibextid=ZbWKwL/"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+        </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+    }
+    event.currentTarget.classlist.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+        </div>
+
+</div>
+
+</body>
+</html>
